@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weynua Gebtas - Authentic Ethiopian Cuisine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h1>Weynua <span> Gebeta</span></h1>
+            </div>
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <div>
+                <h2>Authentic Ethiopian Cuisine</h2>
+                <p>Experience the rich flavors and traditions of Ethiopia</p>
+                <div class="hero-btns">
+                    <a href="#menu" class="btn">View Our Menu</a>
+                    <a href="#contact" class="btn btn-outline">Book a Table</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Ethiopian Cuisine</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Experience the Taste of Ethiopia</h3>
+                    <p>Ethiopian cuisine is characterized by its unique flavors, communal dining style, and traditional cooking methods. At Habesha Kitchen, we bring you the authentic taste of Ethiopia using traditional recipes passed down through generations.</p>
+                    <p>Our dishes are served on injera, a sourdough flatbread with a unique, slightly spongy texture. Traditional Ethiopian cuisine uses a rich variety of spices and herbs, making each dish a flavorful experience.</p>
+                    <p>We take pride in offering vegetarian-friendly options that follow Ethiopian Orthodox fasting traditions, as well as delicious meat dishes like Doro Wat and Tibs.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1512054502232-10a0a035d672?ixlib=rb-4.0.3" alt="Traditional Ethiopian Injera with various stews">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section menu" id="menu">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Menu</h2>
+            </div>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="meat">Meat Dishes</button>
+                <button class="category-btn" data-category="vegetarian">Vegetarian</button>
+                <button class="category-btn" data-category="appetizers">Appetizers</button>
+                <button class="category-btn" data-category="desserts">Desserts</button>
+            </div>
+            <div class="menu-items" id="menu-items">
+                <!-- Menu items will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery" id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Gallery</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1603729997250-9c1c1b0b0a0a?ixlib=rb-4.0.3" alt="Ethiopian Food">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1604633723866-6b9badf4d7fe?ixlib=rb-4.0.3" alt="Ethiopian Food">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1589302168065-89a8b7f1ee31?ixlib=rb-4.0.3" alt="Coffee Ceremony">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1512054502232-10a0a035d672?ixlib=rb-4.0.3" alt="Traditional Dining">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1555939614-e585c16e15a1?ixlib=rb-4.0.3" alt="Doro Wat">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1603105037880-8802c0cbf39a?ixlib=rb-4.0.3" alt="Vegetarian Platter">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Visit Our Restaurant</h3>
+                    <div class="contact-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Cultural Street, Shashemene, Ethiopia</p>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+251 123 456 789</p>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@habeshakitchen.com</p>
+                    </div>
+                    
+                    <div class="hours">
+                        <h3>Opening Hours</h3>
+                        <ul>
+                            <li><span>Monday - Thursday:</span> <span>11:00 AM - 10:00 PM</span></li>
+                            <li><span>Friday - Saturday:</span> <span>11:00 AM - 11:00 PM</span></li>
+                            <li><span>Sunday:</span> <span>12:00 PM - 9:00 PM</span></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="map">
+                    <div style="width:100%;height:100%;background:#eee;display:flex;align-items:center;justify-content:center;color:#666;">
+                        <i class="fas fa-map-marked-alt" style="font-size:3rem;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Habesha Kitchen</h2>
+                    <p>Bringing authentic Ethiopian flavors to your table since 2005.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Our Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for updates and special offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Habesha Kitchen. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
