@@ -1,6 +1,6 @@
 /* style.css */
 :root {
-    --primary-green: #078930;
+    --primary-green: #ff9f0d;
     --primary-yellow: #FCDD09;
     --primary-red: #DA121A;
     --primary-blue: #0F47AF;
@@ -54,8 +54,9 @@ header {
 .logo h1 {
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--primary-green);
+    color: #ff9f0d;
     margin-left: 10px;
+    text-align: center;
 }
 
 .logo span {
@@ -125,6 +126,7 @@ header {
     font-size: 3.5rem;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-family: cursive;
 }
 
 .hero p {
@@ -135,19 +137,19 @@ header {
 
 .btn {
     display: inline-block;
-    background: var(--primary-green);
+    background: #ff9f0d;
     color: white;
     padding: 12px 30px;
     border-radius: 30px;
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s;
-    border: 2px solid var(--primary-green);
+    border: 2px solid #333;
 }
 
 .btn:hover {
     background: transparent;
-    color: var(--primary-green);
+    color: #fff;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
@@ -233,7 +235,7 @@ header {
 
 /* Menu Section */
 .menu {
-    background-color: #fff;
+    background-color:#333;
 }
 
 .menu-categories {
@@ -300,7 +302,7 @@ header {
 .menu-details h3 {
     font-size: 1.4rem;
     margin-bottom: 10px;
-    color: var(--primary-green);
+    color:#333;
 }
 
 .menu-details p {
@@ -377,7 +379,8 @@ header {
 
 /* Contact Section */
 .contact {
-    background-color: white;
+    background-color:#333;
+    color: white;
 }
 
 .contact-container {

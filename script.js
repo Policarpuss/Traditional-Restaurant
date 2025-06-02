@@ -3,11 +3,11 @@
 const menuData = [
     {
         id: 1,
-        name: "Doro Wat",
+        name: "Doro ( ዶሮ)",
         description: "Spicy chicken stew with berbere spice, served with hard-boiled eggs",
         price: 16.99,
         category: "meat",
-        image: "https://images.unsplash.com/photo-1555939614-e585c16e15a1?ixlib=rb-4.0.3",
+        image: "./images/Doro-wet.png",
         spiceLevel: 3
     },
     {
@@ -16,7 +16,7 @@ const menuData = [
         description: "Selection of lentil stews, collard greens, cabbage and potato stew",
         price: 14.99,
         category: "vegetarian",
-        image: "https://images.unsplash.com/photo-1603105037880-8802c0cbf39a?ixlib=rb-4.0.3",
+        image: "./images/beyaynetu.jpg",
         spiceLevel: 1
     },
     {
@@ -25,7 +25,7 @@ const menuData = [
         description: "Sautéed beef cubes with onions, tomatoes, and Ethiopian spices",
         price: 17.99,
         category: "meat",
-        image: "https://images.unsplash.com/photo-1604633723866-6b9badf4d7fe?ixlib=rb-4.0.3",
+        image: "./images/images.png",
         spiceLevel: 2
     },
     {
@@ -34,16 +34,16 @@ const menuData = [
         description: "Traditional Ethiopian steak tartare with mitmita spice and clarified butter",
         price: 18.99,
         category: "meat",
-        image: "https://images.unsplash.com/photo-1603729997250-9c1c1b0b0a0a?ixlib=rb-4.0.3",
+        image: "./images/kitfo 2.JPG",
         spiceLevel: 4
     },
     {
         id: 5,
-        name: "Shiro Wat",
+        name: "Shiro ( ሽሮ)",
         description: "Smooth chickpea stew seasoned with berbere and garlic",
         price: 13.99,
         category: "vegetarian",
-        image: "https://images.unsplash.com/photo-1603105037880-8802c0cbf39a?ixlib=rb-4.0.3",
+        image: "./images/Shiro.png",
         spiceLevel: 2
     },
     {
@@ -51,17 +51,17 @@ const menuData = [
         name: "Ethiopian Coffee Ceremony",
         description: "Traditional coffee preparation with popcorn and incense",
         price: 9.99,
-        category: "desserts",
-        image: "https://images.unsplash.com/photo-1589302168065-89a8b7f1ee31?ixlib=rb-4.0.3",
+        category: "drinks",
+        image: "./images/coffee.png",
         spiceLevel: 0
     },
     {
         id: 7,
-        name: "Sambusa",
+        name: "Chiko",
         description: "Crispy pastry filled with lentils or spiced ground beef",
         price: 7.99,
-        category: "appetizers",
-        image: "https://images.unsplash.com/photo-1603729997250-9c1c1b0b0a0a?ixlib=rb-4.0.3",
+        category: "desserts",
+        image: "./images/chiko.png",
         spiceLevel: 2
     },
     {
@@ -70,7 +70,7 @@ const menuData = [
         description: "Shredded injera mixed with spicy sauce and butter",
         price: 12.99,
         category: "vegetarian",
-        image: "https://images.unsplash.com/photo-1603105037880-8802c0cbf39a?ixlib=rb-4.0.3",
+        image: "./images/firfir.png",
         spiceLevel: 3
     },
     {
@@ -79,7 +79,7 @@ const menuData = [
         description: "Premium beef sautéed with onions, peppers and special spices",
         price: 19.99,
         category: "meat",
-        image: "https://images.unsplash.com/photo-1604633723866-6b9badf4d7fe?ixlib=rb-4.0.3",
+        image: "./images/kitfo3.jpg",
         spiceLevel: 2
     }
 ];
