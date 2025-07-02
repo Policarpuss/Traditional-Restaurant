@@ -5,7 +5,7 @@
     --primary-red: #DA121A;
     --primary-blue: #0F47AF;
     --dark-brown: #3d2b1f;
-    --light-beige: #f5f1e8;
+    --light-beige: #f5f5dc;
     --gold: #d4af37;
 }
 
@@ -18,7 +18,7 @@
 body {
     font-family: 'cursive';
     background-color: var(--light-beige);
-    color: var(--dark-brown);
+    color: var(#fff);
     line-height: 1.6;
 }
 
@@ -108,7 +108,7 @@ header {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?ixlib=rb-4.0.3') no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./images/hero.png') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -167,6 +167,10 @@ header {
 }
 
 /* About Section */
+#about {
+    background-color: #333;
+    color: var(--light-beige);
+}
 .section {
     padding: 80px 0;
 }
@@ -207,8 +211,8 @@ header {
 
 .about-text h3 {
     font-size: 1.8rem;
-    margin-bottom: 20px;
-    color: var(--primary-red);
+    margin-bottom: 10px;
+    color: #fff
 }
 
 .about-text p {
@@ -297,6 +301,7 @@ header {
 
 .menu-details {
     padding: 20px;
+    background-color: #EEEFE0;
 }
 
 .menu-details h3 {

@@ -4,84 +4,472 @@ const menuData = [
     {
         id: 1,
         name: "Doro ( ዶሮ)",
-        description: "Spicy chicken stew with berbere spice, served with hard-boiled eggs",
-        price: 16.99,
+        description: "Spicy chicken stew with berbere spice, served with hard-boiled eggs ( ቅዳሜ እና እሁድ)",
+        price: 500,
         category: "meat",
         image: "./images/Doro-wet.png",
         spiceLevel: 3
     },
     {
+        id: 4,
+        name: "Kitfo",
+        description: "Traditional Ethiopian steak tartare with mitmita spice and clarified butter",
+        price: 600,
+        category: "meat",
+        image: "./images/kitfoo.jpg",
+        spiceLevel: 4
+    },
+    {
         id: 2,
-        name: "Vegetarian Platter",
+        name: "የገብስ ገንፎ",
         description: "Selection of lentil stews, collard greens, cabbage and potato stew",
-        price: 14.99,
+        price: 200,
         category: "vegetarian",
+        image: "./images/gebssgenfo.jpg",
+        spiceLevel: 1
+    },
+    {
+        id: 3,
+        name: "ጥቁር ገብስ ገንፎ",
+        description: "Selection of lentil stews, collard greens, cabbage and potato stew",
+        price: 250,
+        category: "vegetarian",
+        image: "./images/gebs-genfo.jpg",
+        spiceLevel: 1
+    },
+    {
+        id: 3,
+        name: "የቡላ ገንፎ",
+        description: "The Enset plant's root is scraped, mashed, and processed to extract the starch, which is then dried into a fine powder.",
+        price: 150,
+        category: "vegetarian",
+        image: "./images/bulaa.png",
+        spiceLevel: 1
+    },
+    {
+        id: 4,
+        name: "ወይኗ እስፔሻል ",
+        description: "",
+        price: 1000,
+        category: "meat",
         image: "./images/beyaynetu.jpg",
         spiceLevel: 1
     },
     {
         id: 3,
-        name: "Beef Tibs",
-        description: "Sautéed beef cubes with onions, tomatoes, and Ethiopian spices",
-        price: 17.99,
+        name: "እስፔሻል ክትፎ",
+        description: "Traditional Ethiopian steak tartare with mitmita spice and clarified butter",
+        price: 700,
         category: "meat",
-        image: "./images/images.png",
+        image: "./images/special-kitfo-ethiopian.jpg",
         spiceLevel: 2
     },
-    {
-        id: 4,
-        name: "Kitfo",
-        description: "Traditional Ethiopian steak tartare with mitmita spice and clarified butter",
-        price: 18.99,
-        category: "meat",
-        image: "./images/kitfo 2.JPG",
-        spiceLevel: 4
-    },
+  
     {
         id: 5,
         name: "Shiro ( ሽሮ)",
         description: "Smooth chickpea stew seasoned with berbere and garlic",
-        price: 13.99,
-        category: "vegetarian",
-        image: "./images/Shiro.png",
+        price: 150,
+        category: "meat",
+        image: "./images/Shiro.jpg",
         spiceLevel: 2
     },
     {
         id: 6,
         name: "Ethiopian Coffee Ceremony",
         description: "Traditional coffee preparation with popcorn and incense",
-        price: 9.99,
+        price: 20,
         category: "drinks",
         image: "./images/coffee.png",
         spiceLevel: 0
     },
     {
         id: 7,
-        name: "Chiko",
-        description: "Crispy pastry filled with lentils or spiced ground beef",
-        price: 7.99,
+        name: "Chiko ( ጭኮ)",
+        description: "barley conserved with butter",
+        price: 350,
         category: "desserts",
         image: "./images/chiko.png",
         spiceLevel: 2
     },
     {
         id: 8,
-        name: "Firfir",
-        description: "Shredded injera mixed with spicy sauce and butter",
-        price: 12.99,
-        category: "vegetarian",
-        image: "./images/firfir.png",
+        name: " እስፔሻል እርጥብ ሳንዱች",
+        description: "Sandwich made with potato and spicy sauce",
+        price: 200,
+        category: "desserts",
+        image: "./images/erteb2.jpg",
+        spiceLevel: 3
+    },
+    {
+        id: 12,
+        name: "እርጥብ ሳንዱች",
+        description: "Sandwich made with potato and spicy sauce",
+        price: 100,
+        category: "desserts",
+        image: "./images/ertib.jpg",
         spiceLevel: 3
     },
     {
         id: 9,
-        name: "Tibs Special",
+        name: "ቅቅል",
         description: "Premium beef sautéed with onions, peppers and special spices",
-        price: 19.99,
+        price: 300,
         category: "meat",
-        image: "./images/kitfo3.jpg",
+        image: "./images/kikle.png",
         spiceLevel: 2
-    }
+    },
+    {
+        id: 10,
+        name: "ጥብስ",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 400,
+        category: "meat",
+        image: "./images/tibs.jpg",
+        spiceLevel: 2
+    },
+    {
+        id: 11,
+        name: "የቡላ ገንፎ በክትፎ",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 300,
+        category: "vegetarian",
+        image: "./images/Bula-kitfo.jpg",
+        spiceLevel: 2
+    },
+    {
+        id: 12,
+        name: "ፈልቶ የቀዘቀዘ ወተት",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 70,
+        category: "drinks",
+        image: "./images/milk1.png",
+        spiceLevel: 2
+    },
+    {
+        id: 13,
+        name: "ፍስክ አገልግል",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 500,
+        category: "meat",
+        image: "./images/fesegagelgel.jpg",
+        spiceLevel: 2
+    },
+    {
+        id: 14,
+        name: "እርጎ",
+        description: "yougurt made from milk",
+        price: 80,
+        category: "drinks",
+        image: "./images/yougurt.png",
+        spiceLevel: 2
+    },
+    {
+        id: 15,
+        name: "ሽንኮራ ጁስ",
+        description: "A refreshing juice made from Sugercane",
+        price: 150,
+        category: "drinks",
+        image: "./images/suger.png",
+        spiceLevel: 2
+    },
+    {
+        id: 16,
+        name: "ብርዝ",
+        description: "wine made from honey",
+        price: 80,
+        category: "drinks",
+        image: "./images/birze.jpg",
+        spiceLevel: 2
+    },
+    {
+        id: 17,
+        name: "ምላስ ሰንበር",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 350,
+        category: "regular",
+        image: "./images/mlassenber (2).jpg",
+        spiceLevel: 4
+    },
+    {
+        id: 18,
+        name: "ቋንጣ ፍርፍር",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 250,
+        category: "regular",
+        image: "./images/kuanta1.png",
+        spiceLevel: 2
+    },
+    {
+        id: 19,
+        name: "ስጋ ፍርፍር",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 250,
+        category: "regular",
+        image: "./images/sega.jpg",
+        spiceLevel: 3
+    },
+    {
+        id: 20,
+        name: "እስፔሻል ፍርፍር",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 350,
+        category: "regular",
+        image: "./images/kuanta.png",
+        spiceLevel: 2
+    },
+    {
+        id: 21,
+        name: "እንቁላል ፍርፍር",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 150,
+        category: "regular",
+        image: "./images/enkulalfrfer.png",
+        spiceLevel: 2
+    },
+    {
+        id: 22,
+        name: "እንቁላል ሳንዱች",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 150,
+        category: "regular",
+        image: "./images/eggsandwich.png",
+        spiceLevel: 3
+    },
+    {
+        id: 23,
+        name: "ቱና ሳንዱች",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 200,
+        category: "regular",
+        image: "./images/Tuna-fish-Sandwich.jpg",
+        spiceLevel: 3
+    },
+    {
+        id: 24,
+        name: "አትክልት ሳንዱች",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 150,
+        category: "regular",
+        image: "./images/veg sandwich.jpg",
+        spiceLevel: 3
+    },
+    {
+        id: 25,
+        name: "እንቁላል በስጋ",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 250,
+        category: "regular",
+        image: "./images/eggmeat.jpg",
+        spiceLevel: 3
+    },
+    {
+        id: 26,
+        name: "እንጀራ ፍርፍር",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 150,
+        category: "regular",
+        image: "./images/frfr.jpg",
+        spiceLevel: 3
+    },
+    {
+        id: 27,
+        name: "ቱና ሳላድ",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 300,
+        category: "regular",
+        image: "./images/TUNA SALAD.jpg",
+        spiceLevel: 3
+    },
+    {
+        id: 28,
+        name: "ሚክስ ሳላድ",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 250,
+        category: "regular",
+        image: "./images/tebla.png",
+        spiceLevel: 3
+    },
+    {
+        id: 29,
+        name: "አቩካዶ ሳላድ",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 150,
+        category: "regular",
+        image: "./images/av.jpg",
+        spiceLevel: 3
+    },
+    {
+        id: 30,
+        name: "ክለብ ሳንዱች",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 450,
+        category: "regular",
+        image: "./images/club-sandwich1.jpg",
+        spiceLevel: 3
+    },
+    {
+        id: 30,
+        name: "ቡላ ፍርፍር",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 250,
+        category: "vegetarian",
+        image: "./images/bulaferfer.jpg",
+        spiceLevel: 3
+    },
+    {
+        id: 31,
+        name: " እስፔሻል ጨጨብሳ",
+        // description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 300,
+        category: "vegetarian",
+        image: "./images/special-cecebsa.jpg",
+        spiceLevel: 3
+    },
+    {
+        id: 32,
+        name: " ጨጨብሳ",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 150,
+        category: "vegetarian",
+        image: "./images/Chechebsa.jpg",
+        spiceLevel: 3
+    },
+    {
+        id: 33,
+        name: "ቂንጬ",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 150,
+        category: "vegetarian",
+        image: "./images/qinche.jpg",
+        spiceLevel: 3
+    },
+    {
+        id: 34,
+        name: "ዱለት",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 300,
+        category: "meat",
+        image: "./images/dulet.jpg",
+        spiceLevel: 3
+    },
+    {
+        id: 35,
+        name: "አሳ ጉላሽ",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 350,
+        category: "meat",
+        image: "./images/asagulash.jpg",
+        spiceLevel: 3
+    },
+    {
+        id: 36,
+        name: "አሳ ኮተሌት",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 400,
+        category: "meat",
+        image: "./images/kotlet.jpg",
+        spiceLevel: 3
+    },
+    {
+        id: 37,
+        name: "አሳ ለብለብ",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 250,
+        category: "meat",
+        image: "./images/lebleb.jpg",
+        spiceLevel: 3
+    },
+    {
+        id: 38,
+        name: "የፆም አገልግል",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 500,
+        category: "meat",
+        image: "./images/yetsomagelgel.jpg",
+        spiceLevel: 3
+    },
+    {
+        id: 39,
+        name: "እስፔሻል ቡላ ፍርፍር",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 450,
+        category: "vegetarian",
+        image: "./images/bulaferfer.jpg",
+        spiceLevel: 3
+    },
+    {
+        id: 40,
+        name: "ሩዝ በአሳ",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 200,
+        category: "meat",
+        image: "./images/ricewithfish.jpg",
+        spiceLevel: 3
+    },
+    {
+        id: 41,
+        name: "ሩዝ በቱና",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 350,
+        category: "meat",
+        image: "./images/ricewithtuna.jpg",
+        spiceLevel: 3
+    },
+    {
+        id: 42,
+        name: "ሩዝ በዶሮ",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 400,
+        category: "meat",
+        image: "./images/ricewithchick.jpg",
+        spiceLevel: 3
+    },
+    {
+        id: 43,
+        name: "ሩዝ በአትክልት",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 150,
+        category: "",
+        image: "./images/ricewithvegi.png",
+        spiceLevel: 3
+    },
+    {
+        id: 44,
+        name: "ቦዘና ሽሮ",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 200,
+        category: "meat",
+        image: "./images/bozena.jpg",
+        spiceLevel: 3
+    },
+    {
+        id: 45,
+        name: "ቡርሳሜ",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 500,
+        category: "meat",
+        image: "./images/chukame.jpg",
+        spiceLevel: 3
+    },
+    {
+        id: 46,
+        name: "ጩካሜ",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 450,
+        category: "meat",
+        image: "./images/bursame.jpg",
+        spiceLevel: 3
+    },
+    {
+        id: 47,
+        name: "ምንቸት",
+        description: "Premium beef sautéed with onions, peppers and special spices",
+        price: 400,
+        category: "meat",
+        image: "./images/mincet.jpg",
+        spiceLevel: 3
+    },
 ];
 
 // Initialize when DOM is loaded
