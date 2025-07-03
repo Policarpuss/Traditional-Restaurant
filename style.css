@@ -615,18 +615,5 @@ footer {
     .contact-container {
         grid-template-columns: 1fr;
     }
-    
-    .newsletter-form {
-        flex-direction: column;
-    }
-    
-    .newsletter-form input {
-        border-radius: 30px;
-        margin-bottom: 10px;
-    }
-    
-    .newsletter-form button {
-        border-radius: 30px;
-        padding: 12px;
-    }
+
 }
