@@ -287,7 +287,7 @@ const menuData = [
         description: "Premium beef sautéed with onions, peppers and special spices",
         price: 250,
         category: "regular",
-        image: "./images/tebla.png",
+        image: "./images/mixedsalad.png",
         spiceLevel: 3
     },
     {
