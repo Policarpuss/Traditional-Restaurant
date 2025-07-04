@@ -26,7 +26,7 @@ const menuData = [
         price: 200,
         category: "vegetarian",
         image: "./images/gebssgenfo.jpg",
-        spiceLevel: 1
+        spiceLevel: 3
     },
     {
         id: 3,
@@ -35,7 +35,7 @@ const menuData = [
         price: 250,
         category: "vegetarian",
         image: "./images/gebs-genfo.jpg",
-        spiceLevel: 1
+        spiceLevel: 3
     },
     {
         id: 3,
@@ -49,11 +49,11 @@ const menuData = [
     {
         id: 4,
         name: "ወይኗ እስፔሻል ",
-        description: "",
+        description: "Mixed of various Culutral Foods",
         price: 1000,
         category: "meat",
         image: "./images/beyaynetu.jpg",
-        spiceLevel: 1
+        spiceLevel: 3
     },
     {
         id: 3,
@@ -320,7 +320,7 @@ const menuData = [
     {
         id: 31,
         name: " እስፔሻል ጨጨብሳ",
-        // description: "Premium beef sautéed with onions, peppers and special spices",
+        description: "Premium beef sautéed with onions, peppers and special spices",
         price: 300,
         category: "vegetarian",
         image: "./images/special-cecebsa.jpg",
